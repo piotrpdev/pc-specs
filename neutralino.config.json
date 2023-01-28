@@ -1,0 +1,38 @@
+{
+  "applicationId": "js.neutralino.zero",
+  "port": 0,
+  "version": "1.0.0",
+  "defaultMode": "window",
+  "documentRoot": "/my-app/dist/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "nativeAllowList": [
+    "app.*",
+    "computer.*",
+    "os.*",
+    "filesystem.*"
+  ],
+  "modes": {
+    "window": {
+      "title": "myapp",
+      "width": 800,
+      "height": 500,
+      "minWidth": 400,
+      "minHeight": 200,
+      "icon": "/my-app/src/assets/favicon.ico"
+    }
+  },
+  "cli": {
+    "binaryName": "myapp",
+    "resourcesPath": "/my-app/dist/",
+    "extensionsPath": "/extensions/",
+    "clientLibrary": "/my-app/public/neutralino.js",
+    "binaryVersion": "4.9.0",
+    "clientVersion": "3.8.0",
+    "frontendLibrary": {
+      "patchFile": "/my-app/index.html",
+      "devUrl": "http://localhost:3000"
+    }
+  }
+}
