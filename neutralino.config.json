@@ -1,5 +1,5 @@
 {
-  "applicationId": "js.neutralino.zero",
+  "applicationId": "dev.piotrp.pcspecs",
   "port": 0,
   "version": "1.0.0",
   "defaultMode": "window",
@@ -15,16 +15,16 @@
   ],
   "modes": {
     "window": {
-      "title": "myapp",
+      "title": "PC Specs",
       "width": 800,
       "height": 500,
-      "minWidth": 400,
-      "minHeight": 200,
+      "minWidth": 500,
+      "minHeight": 380,
       "icon": "/my-app/src/assets/favicon.ico"
     }
   },
   "cli": {
-    "binaryName": "myapp",
+    "binaryName": "pc_specs",
     "resourcesPath": "/my-app/dist/",
     "extensionsPath": "/extensions/",
     "clientLibrary": "/my-app/public/neutralino.js",

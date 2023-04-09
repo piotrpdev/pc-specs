@@ -1,6 +1,7 @@
 /* @refresh reload */
 import { render } from 'solid-js/web';
 
+import 'purecss/build/pure-min.css'
 import './index.css';
 import App from './App';
 
