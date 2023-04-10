@@ -1,10 +1,16 @@
 # PC Specs
 
+![Demo screenshot](.github/demo/demo.png)
+
 App to show your PC specs.
 
-Made to test [Neutralinojs](https://neutralino.js.org/).
+Made to test [Neutralinojs](https://neutralino.js.org/) and [SolidJS](https://www.solidjs.com/).
 
-## Build
+## Usage
+
+Download the [latest release](https://github.com/piotrpdev/pc-specs/releases/) for your system and run the executable.
+
+## Development
 
 ```bash
 # Install dependencies in root, my-app, and extensions
@@ -31,4 +37,3 @@ npm run package
 cd ../..
 npm run release
 ```
-
