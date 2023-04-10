@@ -7,19 +7,22 @@
   "url": "/",
   "enableServer": true,
   "enableNativeAPI": true,
+  "enableExtensions": true,
   "nativeAllowList": [
     "app.*",
     "computer.*",
     "os.*",
-    "filesystem.*"
+    "filesystem.*",
+    "extensions.*",
+    "events.*"
   ],
   "modes": {
     "window": {
       "title": "PC Specs",
       "width": 800,
       "height": 500,
-      "minWidth": 500,
-      "minHeight": 380,
+      "minWidth": 600,
+      "minHeight": 450,
       "icon": "/my-app/src/assets/favicon.ico"
     }
   },
@@ -34,5 +37,13 @@
       "patchFile": "/my-app/index.html",
       "devUrl": "http://localhost:3000"
     }
-  }
+  },
+  "extensions": [
+    {
+        "id": "dev.piotrp.pcspecs.hardware",
+        "commandLinux": "${NL_PATH}/extensions/hardware/build-linux",
+        "commandDarwin": "${NL_PATH}/extensions/hardware/build-macos",
+        "commandWindows": "${NL_PATH}/extensions/hardware/build-win.exe"
+    }
+]
 }

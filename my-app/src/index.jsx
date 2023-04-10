@@ -4,6 +4,7 @@ import { render } from 'solid-js/web';
 import 'purecss/build/pure-min.css'
 import './index.css';
 import App from './App';
+import { SpecsProvider } from './contexts/SpecsContext';
 
 ;(async () => {
     if (!window.NL_PORT) {
@@ -22,4 +23,4 @@ import App from './App';
     Neutralino.init()
 })();
 
-render(() => <App />, document.getElementById('root'));
+render(() => <SpecsProvider><App /></SpecsProvider>, document.getElementById('root'));

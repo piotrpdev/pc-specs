@@ -11,3 +11,12 @@ neutralino.js
 # Neutralinojs related files
 .storage
 *.log
+
+node_modules/
+
+build-linux
+build-macos
+build-win.exe
+build.cjs
+
+.tmp
